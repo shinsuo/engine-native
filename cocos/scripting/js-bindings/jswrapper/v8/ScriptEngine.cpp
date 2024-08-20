@@ -695,6 +695,8 @@ namespace se {
                 hook();
             }
             _beforeCleanupHookArray.clear();
+            _promiseArray.clear();  
+            _lastStackTrace.clear();
 
             SAFE_DEC_REF(_globalObj);
             Object::cleanup();
