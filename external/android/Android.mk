@@ -80,12 +80,6 @@ include $(PREBUILT_STATIC_LIBRARY)
 
 #======================================
 include $(CLEAR_VARS)
-LOCAL_MODULE := v8_inspector
-LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/v8/libinspector.a
-include $(PREBUILT_STATIC_LIBRARY)
-
-#======================================
-include $(CLEAR_VARS)
 LOCAL_MODULE := v8_static
 LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/v8/libv8_monolith.a
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/$(TARGET_ARCH_ABI)/include/v8
